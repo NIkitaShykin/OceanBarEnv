@@ -20,4 +20,11 @@ services:
       - 3000:3000
     volumes:
       - ./frontend/src:/app/src
-
+      
+  mobile:
+    container_name: mobile
+    build: mobile/
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes: 
+      - ./frontend/src:/app/src    
