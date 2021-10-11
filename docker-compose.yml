@@ -27,4 +27,4 @@ services:
     environment:
       CHOKIDAR_USEPOLLING: "true"
     volumes: 
-      - ./frontend/src:/app/src    
+      - ./mobile/android/app/src/main:/app/android/app/src/main    
